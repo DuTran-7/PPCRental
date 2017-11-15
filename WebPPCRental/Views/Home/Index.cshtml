@@ -1,0 +1,88 @@
+﻿@*@model IEnumerable<WebPPC.Models.PROPERTY>*@
+@using WebPPCRental.Models
+@model List<PROPERTY>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+   
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/Images/IMG_1592-stamp.jpg" />
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/PIS_4622-Edit.jpg" />
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/PIS_6656-Edit-stamp.jpg" />
+            <div class="carousel-caption">
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/PIS_6706-Edit-stamp.jpg" />
+            <div class="carousel-caption">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<hr style="border: 2px solid #000000" size="5" width="140px" align="left" />
+<div>
+    <select>
+        <option><a href="">Quan1</a></option>
+        <option>Quan2</option>
+        <option>Quan3</option>
+        <option>Quan4</option>
+        <option>Quan5</option>
+        <option>Quan6</option>
+    </select>
+</div>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 ">
+            <div style="border:none" class="thumbnail">
+                <img src="/Images/@item.Avatar" alt="@item.PropertyName" />
+                <div class="caption">
+                    <div style="float:left; height:100px; width:250px; margin-top:0px" id="left">
+                        <h4>@item.PropertyName.Substring(0, 16)</h4>
+                        <p> @item.Content.Substring(0, 70)  ...</p>
+                    </div>
+                    <div id="right" style="float: right; height: 100px; width: 80px; margin-top:5px">
+                        <strong style="color:red; font-size: 140%">$@item.Price</strong>
+
+                        @*<p style=" margin-top:30px">@Html.ActionLink("Detail", "Detail", new { @item.ID })</p>*@
+                        <p style="margin-top:20px"><a href="/Property/Detail/@item.ID" >Xem tiep >></a> </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
