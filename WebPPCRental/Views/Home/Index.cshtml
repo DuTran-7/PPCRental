@@ -4,18 +4,20 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+<style type="text/css">
    
+    </style>
+@*<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
     <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
-    
+
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div style="width:100%" class="carousel-inner" role="listbox">
         <div class="item active">
             <img src="~/Images/IMG_1592-stamp.jpg" />
             <div class="carousel-caption">
@@ -37,7 +39,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Controls -->
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -47,19 +49,43 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+</div>*@
 
-<hr style="border: 2px solid #000000" size="5" width="140px" align="left" />
-<div>
-    <select>
-        <option><a href="">Quan1</a></option>
-        <option>Quan2</option>
-        <option>Quan3</option>
-        <option>Quan4</option>
-        <option>Quan5</option>
-        <option>Quan6</option>
-    </select>
-</div>
+<hr style="border: 2px solid #000000" size="5" width="1130px" align="left" />
+@*<div><a href="Project/Project/@item.ID"> @item.</a></div>*@
+<form style="float: right;margin-right:5px; width:100%" action="@Url.Action("Filter","Home")" method="get" name="filter" role="combobox">
+    <div>
+        
+        <select style="float: right; width: 200px; height: 40px; background-color: #BEBEBE;border-radius:4px; " id="Quan">
+
+            <option value="Q.1">Quận 1</option>
+            <option>Quận 2</option>
+            <option>Quận 3</option>
+            <option>Quận 4</option>
+            <option>Quận 5</option>
+            <option>Quận 6</option>
+            <option>Quận 7</option>
+            <option>Quận 8</option>
+            <option>Quận 9</option>
+            <option>Quận 10</option>
+            <option>Quận 11</option>
+            <option>Quận 12</option>
+            <option>Quận Thủ Đức</option>
+            <option>Quận Gò Vấp</option>
+            <option>Quận Bình Thạnh</option>
+            <option>Quận Tân Bình</option>
+            <option>Quận Tân Phú</option>
+            <option>Quận Phú Nhuận</option>
+            <option>Quận Bình Tân</option>
+            <option>Huyện Củ Trị</option>
+            <option>Huyện Hóc Môn</option>
+            <option>Huyện Bình Chánh</option>
+            <option>Huyện Nhà Bè</option>
+            <option>Huyện Nhf Bè</option>
+            <option>Huyện Cần Giờ</option>
+        </select>
+    </div>
+</form>
 
 <div class="row">
     @foreach (var item in Model)
@@ -76,13 +102,48 @@
                         <strong style="color:red; font-size: 140%">$@item.Price</strong>
 
                         @*<p style=" margin-top:30px">@Html.ActionLink("Detail", "Detail", new { @item.ID })</p>*@
-                        <p style="margin-top:20px"><a href="/Property/Detail/@item.ID" >Xem tiep >></a> </p>
+                        <p style="margin-top:20px"><a href="/Property/Detail/@item.ID" >Detail >></a> </p>
                     </div>
 
 
                 </div>
             </div>
         </div>
-    }
 
+    }
+    <hr style="border: 2px solid #000000" size="5" width="1150px" align="left" />
+    <footer style="float:left; width:1000px;margin-left:10px">
+        <h2>Perfect Property Company VietNam</h2>
+        <img src="~/images/23513265_1830010197290625_593480001_n.png" />
+        <p><strong>Address: </strong>3rd floor, Jabes 1, 244 Cong Quynh street, Pham Ngu Lao ward, District 1, Ho Chi Minh City </p>
+        <p><strong>Phone:</strong> 096 420 0531  </p>
+        <p> <strong> Hotline:</strong> 092 029 756</p>
+
+        <ul class="network-social">
+
+            <a href="https://www.facebook.com/">
+                <img src="~/Images/Facebook.png" width="49px" height="49px" />
+            </a>
+
+            <a href="https://www.instagram.com/?hl=vi">
+                <img src="~/Images/IG.png" width="49px" height="49px" />
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <img src="~/Images/Youtube.png" width="49px" height="49px" />
+            </a>
+
+        </ul>
+
+    </footer>
 </div>
+
+@section Scripts {
+<script>
+    $(function () {
+        $('#Quan').change(function () {
+            document.location = '@Url.Action("Filter","Home")?filter=' + $(this).val();
+        });
+        })
+</script>
+}

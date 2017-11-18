@@ -9,7 +9,7 @@ namespace WebPPC.Controllers
 {
     public class HomeController : Controller
     {
-        DemoPPCRentalEntities1 db = new DemoPPCRentalEntities1();
+        DemoPPCRentalEntities db = new DemoPPCRentalEntities();
         public ActionResult Index()
         {
             List<PROPERTY> mi = new List<PROPERTY>();
@@ -35,9 +35,12 @@ namespace WebPPC.Controllers
             PROPERTY team2 = db.PROPERTies.Find(id);
             return View(team2);
         }
-        public ActionResult Filter(string text)
+        [HttpGet]
+        public ActionResult Filter(string filter)
         {
-            var team2 = db.PROPERTies.ToList().Where(x => x.DISTRICT.ToString().Contains(text));
+            var team2 = db.PROPERTies.Where(x => x.DISTRICT.DistrictName.Contains(filter)).ToList();
+            if (string.IsNullOrEmpty(filter))
+                team2 = db.PROPERTies.ToList();
             return View(team2);
         }
     }

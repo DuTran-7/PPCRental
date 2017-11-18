@@ -7,6 +7,62 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style type="text/css">
+        /*.navbar-default {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-color: #FFF;
+        }
+
+            .navbar-default .navbar-brand {
+                color: #FFF;
+            }
+
+                .navbar-default .navbar-brand:hover {
+                    color: #FFB800;
+                }
+
+            .navbar-default .navbar-nav > .active > a {
+                color: #FFF;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #FFF;
+                background-color: rgba(0, 0, 0, 0.5);
+                float: left;
+            }
+
+            .navbar-default .navbar-nav > li > a {
+                color: #999;
+                width: 130px;
+                
+            }
+
+                .dropdown-menu > li > a,
+                .navbar-default .navbar-nav > li > a:hover,
+                .navbar-default .navbar-nav > li > a:focus,
+                .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+                .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                    color: #FFF;
+                }
+                .dropdown-menu > li > a,
+                .navbar-default .navbar-nav > li > a:hover,
+                .navbar-default .navbar-nav > li > a:focus,
+                .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+                .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                    color: #FFF;
+                }
+                 .navbar-default .navbar-nav > .open > a,
+                 .navbar-default .navbar-nav > .open > a:hover,
+                 .navbar-default .navbar-nav > .open > a:focus {
+                color: #555;
+                background-color: #e7e7e7;
+            }
+
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+            .dropdown-menu > li > a:hover {
+                color: #555 !important;
+                
+            }*/
         .navbar-default {
             background-color: rgba(0, 0, 0, 0.8);
             border-color: #FFF;
@@ -44,20 +100,59 @@
                 color: #555;
                 background-color: #e7e7e7;
             }
-            .b{
-                margin-left:10px;
-                padding-left:50px;
-               padding-top:14px;
-               font-family:Arial;
-               font-size:22px;
-            
-            }           
+
+        .b {
+            margin-left: 10px;
+            padding-left: 50px;
+            padding-top: 14px;
+            font-family: Arial;
+            font-size: 22px;
+        }
+
         .network-social {
             float: left;
         }
+
+        .logo {
+            padding-top: 25px;
+        }
+  
     </style>
 </head>
 <body>
+    @*<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header " >
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Ðây là menu mobile</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://congdongit.org">C?ng Ð?ng IT</a>
+                <a><img src="~/Images/23618801_1608361159185050_1872570486_n.png" width="10%" height="10%" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px; float:left">
+                <ul class="nav navbar-nav" style="float:right">
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    
+                    <li><a href="#">Project</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Event<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Plugins 1</a></li>
+                            <li><a href="#">Plugins 2</a></li>
+                            <li><a href="#">Plugins 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Introduce</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>/.nav-collapse 
+        </div>
+    </nav>*@
+    <div class="logo"><img src="~/Images/infor-banner.jpg" style="width:100%" /></div>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -70,12 +165,12 @@
 
 
                 <div>
-                   
+
                     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                    
+
                         <ul class="nav navbar-nav">
                             <li class="a"><img src="~/Images/3.png" width="80px" /></li>
-                            <li class="b"><a href="/Home/HtmlPage1">Home</a></li>
+                            <li class="b"><a href="/Project/ProjectI">Home</a></li>
                             <li class="b"><a href="/Home/Index">Project</a></li>
                             <li class="b"><a href="#">Event</a></li>
                             <li class="b"><a href="#">Introduce</a></li>
@@ -87,47 +182,14 @@
             </div>
         </div>
     </nav>
-
-    @*<nav class="navbar navbar-inverse nav-bg navbar-fixed-top">
-            <div class="container-fluid header">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"><li><a href="#">Home</a></li></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-                <div class="collapse navbar-collapse nav-col" id="myNavbar">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 nav-item nav-item-left">
-                                <ul style="text-align: right;">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Project</a></li>
-                                    <li><a href="#">Event</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-2" style="text-align: center;">
-                                <img style="" src="~/Images/23618801_1608361159185050_1872570486_n.png" width="90%" />
-                            </div>
-                            <div class="col-md-5 nav-item nav-item-right">
-                                <ul style="text-align: left;">
-                                    <li><a href="#">Introduce</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Account</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>*@
+    
     <div style="margin-top:50px" class="container body-content">
-        @RenderBody()
-        <hr />
+       
+        
+         @RenderBody()
+
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
         </footer>
     </div>
 

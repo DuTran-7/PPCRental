@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebPPCRental.Models.PROPERTY>
+
+@{
+    ViewBag.Title = "Filter";
+
+}
+
+
+
+
+<hr style="border: 2px solid #000000" size="5" width="140px" align="left" />
+<form class="filter" role="search" action="@Url.Action("Project","Project")" method="get">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search Project</h2>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Name" name="name">
+        <br>
+        <input type="text" class="form-control" placeholder="Price" name="price">
+        <br>
+        <input type="text" class="form-control" placeholder="Bedroom" name="bedroom">
+        <br>
+        <input type="text" class="form-control" placeholder="BathRoom" name="bathroom">
+
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 ">
+            <div style="border:none" class="thumbnail">
+                <img src="/Images/@item.Avatar" alt="@item.PropertyName" />
+                <div class="caption">
+                    <div style="float:left; height:100px; width:250px; margin-top:0px" id="left">
+                        <h4>@item.PropertyName.Substring(0, 16)</h4>
+                        <p> @item.Content.Substring(0, 70)  ...</p>
+                    </div>
+                    <div id="right" style="float: right; height: 100px; width: 80px; margin-top:5px">
+                        <strong style="color:red; font-size: 140%">$@item.Price</strong>
+
+                        @*<p style=" margin-top:30px">@Html.ActionLink("Detail", "Detail", new { @item.ID })</p>*@
+                        <p style="margin-top:20px"><a href="/Property/Detail/@item.ID">Xem tiep >></a> </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

@@ -1,186 +1,285 @@
 ﻿@model WebPPCRental.Models.PROPERTY
 
+
 @{
     ViewBag.Title = "Detail";
 }
+<style>
+    #leftcontent {
+        width: 600px;
+        float: left;
+    }
 
-<h2>Detail</h2>
+    #rightcontent {
+        width: 300px;
+        float: right;
+    }
+    #cuoi {
+        width: 910px;
+        border:1px solid #000000;
+    } 
+    #left {
+        width: 600px; 
+        float: left;
+    }
+    #right {
+        width: 300px;
+        float: right;
+    }
+  
+</style>
 
+<!--Avatar-->
+<img src="~/Images/@Model.Avatar" alt="@Html.DisplayNameFor(model => Model.PropertyName)" width="100%" />
+<br /><hr /><br />
 <div>
-    <h4>PROPERTY</h4>
-	<hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.PropertyName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PropertyName)
-        </dd>
+    <div id="leftcontent">
+        <h4 style="font-size:300%;text-align: left;text-transform: uppercase; margin-bottom: auto  "><b>@Html.DisplayFor(model => model.PropertyName)</b></h4>
+        <br />
+        <img src="~/Images/location.PNG" width="10" style="" /> Đường @Html.DisplayFor(model => Model.STREET.StreetName) ,Phường @Html.DisplayFor(model => Model.WARD.WardName), Quận @Html.DisplayFor(model => Model.DISTRICT.DistrictName)
+        <br /><br /><br /><br />
+        <h4 style="text-transform: uppercase">Giới thiệu dự án</h4>
+        <p style="text-indent: 50px ; word-wrap:break-word">@Html.DisplayFor(model => model.Content)</p>
+        <br />
+        <br />
+        <div class="row" style="text-align:center">
+            <div class="col-xs-6 col-md-3">
+                <p style="text-align:center;"><img src="~/Images/iconarea.PNG" width="30"></p>
+                @Html.DisplayFor(model => Model.Area)
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <p style="text-align:center;"><img src="~/Images/iconbed.PNG" alt="Bed-Rooom: " width="30"></p>
+                @Html.DisplayFor(model => Model.BedRoom)
+            </div><div class="col-xs-6 col-md-3">
+                <p style="text-align:center;"><img src="~/Images/iconbath.PNG" alt="Bath-Room: " width="30"></p>
+                @Html.DisplayFor(model => Model.BathRoom)
+            </div>
+        </div>
+        <br /><br />
+        <p style="text-align:center;"><img src="~/Images/PIS_6706-Edit-stamp.jpg" width="600" /></p>
+        <div style="width:580px;float:left">
+            <dl class="dl-horizontal">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Avatar)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Avatar)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Images)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UnitPrice)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Images)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.UnitPrice)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Area)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Area)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BedRoom)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.BedRoom)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UnitPrice)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.BathRoom)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.UnitPrice)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.BathRoom)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Area)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PackingPlace)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Area)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PackingPlace)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BedRoom)
-        </dt>
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.Created_at)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BedRoom)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Created_at)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BathRoom)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Create_post)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BathRoom)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Create_post)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PackingPlace)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Note)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PackingPlace)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Note)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Created_at)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Updated_at)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Created_at)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.Updated_at)
+                </dd>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Create_post)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DISTRICT.DistrictName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Create_post)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.DISTRICT.DistrictName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Note)
-        </dt>
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.PROJECT_STATUS.Status_Name)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Note)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PROJECT_STATUS.Status_Name)
+                </dd>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Updated_at)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PROPERTY_TYPE.CodeType)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Updated_at)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.PROPERTY_TYPE.CodeType)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DISTRICT.DistrictName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.STREET.StreetName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DISTRICT.DistrictName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.STREET.StreetName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PROJECT_STATUS.Status_Name)
-        </dt>
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.USER.Email)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PROJECT_STATUS.Status_Name)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.USER.Email)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PROPERTY_TYPE.CodeType)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.USER1.Email)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PROPERTY_TYPE.CodeType)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.USER1.Email)
+                </dd>*@
 
-        <dt>
-            @Html.DisplayNameFor(model => model.STREET.StreetName)
-        </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.WARD.WardName)
+                </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.STREET.StreetName)
-        </dd>
+                <dd>
+                    @Html.DisplayFor(model => model.WARD.WardName)
+                </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.USER.Email)
-        </dt>
+            </dl>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.USER.Email)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.USER1.Email)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.USER1.Email)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.WARD.WardName)
-        </dt>
+    </div>
+    <div id="rightcontent">
+        <h4 style="font-size:200%;text-align: center;text-transform: uppercase; margin-bottom: auto  "><b>PROJECT INVOLVE</b></h4>
+        <br />
+        <div>
+            <div style="border:none" class="thumbnail">
+                <img src="/Images/@Model.Avatar" alt="@Model.PropertyName" />
+                <div class="caption">
+                    <div style="float:left; height:100px; width:250px; margin-top:0px" id="left">
+                        <h4>@Model.PropertyName.Substring(0, 16)</h4>
+                        <p> @Model.Content.Substring(0, 70)  ...</p>
+                        <strong style="color:red; font-size: 140% ; float:left">$@Model.Price</strong>
 
-        <dd>
-            @Html.DisplayFor(model => model.WARD.WardName)
-        </dd>
+                        @*<p style=" margin-top:30px">@Html.ActionLink("Detail", "Detail", new { @item.ID })</p>*@
+                        <p style="margin-top:20px; float:right;margin-right:0px"><a href="/Property/Detail/@Model.ID">Detail >></a> </p>
+                    </div>
+                    
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="border:none; margin-top:150px;" class="thumbnail">
+                <img src="/Images/@Model.Avatar" alt="@Model.PropertyName" />
+                <div class="caption">
+                    <div style="float:left; height:100px; width:250px; margin-top:0px" id="left">
+                        <h4>@Model.PropertyName.Substring(0, 16)</h4>
+                        <p> @Model.Content.Substring(0, 70)  ...</p>
+                        <strong style="color:red; font-size: 140% ; float:left">$@Model.Price</strong>
+
+                        @*<p style=" margin-top:30px">@Html.ActionLink("Detail", "Detail", new { @item.ID })</p>*@
+                        <p style="margin-top:20px; float:right;margin-right:0px"><a href="/Property/Detail/@Model.ID">Detail >></a> </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="rigth" style="float: left; margin-top: 70px; width: 40%">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6333263659794!2d106.69113991404743!3d10.762716662391433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f16ad86371b%3A0x949d258c9508b1f2!2zxJDhuqFpIGjhu41jIFbEg24gTGFuZyBjxqEgc-G7nyAx!5e0!3m2!1svi!2s!4v1510798800587" width="300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+   <div id="cuoi">
+       <div id="left" style="float:left; margin-left:20px; width:60%; margin-bottom:30px">
+           <h3>Apartment Structure:</h3>
+           <img src="~/Images/apartment_structure.jpg" width="70%" />
+       </div>
+       
+   </div>
+    <hr style="border: 2px solid #000000; margin-top: 30px" size="5" width="1150px" align="left" />
+    <footer style="float:left; width:1000px;margin-left:10px">
+        <h2>Perfect Property Company VietNam</h2>
+        <img src="~/images/23513265_1830010197290625_593480001_n.png" />
+        <p><strong>Address: </strong>3rd floor, Jabes 1, 244 Cong Quynh street, Pham Ngu Lao ward, District 1, Ho Chi Minh City </p>
+        <p><strong>Phone:</strong> 096 420 0531  </p>
+        <p> <strong> Hotline:</strong> 092 029 756</p>
+
+        <ul class="network-social">
+
+            <a href="https://www.facebook.com/">
+                <img src="~/Images/Facebook.png" width="49px" height="49px" />
+            </a>
+
+            <a href="https://www.instagram.com/?hl=vi">
+                <img src="~/Images/IG.png" width="49px" height="49px" />
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <img src="~/Images/Youtube.png" width="49px" height="49px" />
+            </a>
+
+        </ul>
+
+    </footer>
+
+
+
+       
+    </div>

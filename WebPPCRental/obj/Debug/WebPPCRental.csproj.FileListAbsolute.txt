@@ -53,58 +53,58 @@ c:\users\my\documents\visual studio 2013\Projects\WebPPCRental\WebPPCRental\bin\
 c:\users\my\documents\visual studio 2013\Projects\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.csprojResolveAssemblyReference.cache
 c:\users\my\documents\visual studio 2013\Projects\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.dll
 c:\users\my\documents\visual studio 2013\Projects\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.pdb
-E:\WebPPCRental\WebPPCRental\bin\WebPPCRental.dll.config
-E:\WebPPCRental\WebPPCRental\bin\WebPPCRental.dll
-E:\WebPPCRental\WebPPCRental\bin\WebPPCRental.pdb
-E:\WebPPCRental\WebPPCRental\bin\Antlr3.Runtime.dll
-E:\WebPPCRental\WebPPCRental\bin\EntityFramework.dll
-E:\WebPPCRental\WebPPCRental\bin\EntityFramework.SqlServer.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.Core.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Cookies.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Facebook.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Google.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.OAuth.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Twitter.dll
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Web.Infrastructure.dll
-E:\WebPPCRental\WebPPCRental\bin\Newtonsoft.Json.dll
-E:\WebPPCRental\WebPPCRental\bin\Owin.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Helpers.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Mvc.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Optimization.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Razor.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.Deployment.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.Razor.dll
-E:\WebPPCRental\WebPPCRental\bin\WebGrease.dll
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Helpers.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Mvc.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Optimization.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.Razor.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.Deployment.xml
-E:\WebPPCRental\WebPPCRental\bin\System.Web.WebPages.Razor.xml
-E:\WebPPCRental\WebPPCRental\bin\Newtonsoft.Json.xml
-E:\WebPPCRental\WebPPCRental\bin\Antlr3.Runtime.pdb
-E:\WebPPCRental\WebPPCRental\bin\EntityFramework.xml
-E:\WebPPCRental\WebPPCRental\bin\EntityFramework.SqlServer.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.Core.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Facebook.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Cookies.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.OAuth.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Google.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.Twitter.xml
-E:\WebPPCRental\WebPPCRental\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.csprojResolveAssemblyReference.cache
-E:\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.dll
-E:\WebPPCRental\WebPPCRental\obj\Debug\WebPPCRental.pdb
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\WebPPCRental.dll.config
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\WebPPCRental.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\WebPPCRental.pdb
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Antlr3.Runtime.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\EntityFramework.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\EntityFramework.SqlServer.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Newtonsoft.Json.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Owin.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Helpers.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Mvc.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Optimization.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Razor.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.Deployment.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.Razor.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\WebGrease.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Helpers.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Mvc.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Optimization.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.Razor.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.Deployment.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\System.Web.WebPages.Razor.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Newtonsoft.Json.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Antlr3.Runtime.pdb
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\EntityFramework.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\EntityFramework.SqlServer.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\obj\Debug\WebPPCRental.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\obj\Debug\WebPPCRental.dll
+C:\Users\My\Documents\Visual Studio 2013\Projects\K21T1-Team02-TeamWork-Week9\WebPPCRental\obj\Debug\WebPPCRental.pdb

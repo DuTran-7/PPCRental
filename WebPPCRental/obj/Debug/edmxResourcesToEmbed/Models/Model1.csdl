@@ -253,7 +253,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DemoPPCRentalEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DemoPPCRentalEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="DISTRICTs" EntityType="Self.DISTRICT" />
     <EntitySet Name="FEATUREs" EntityType="Self.FEATURE" />
     <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" />

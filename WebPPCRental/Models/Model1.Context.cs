@@ -13,10 +13,10 @@ namespace WebPPCRental.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DemoPPCRentalEntities1 : DbContext
+    public partial class DemoPPCRentalEntities : DbContext
     {
-        public DemoPPCRentalEntities1()
-            : base("name=DemoPPCRentalEntities1")
+        public DemoPPCRentalEntities()
+            : base("name=DemoPPCRentalEntities")
         {
         }
     

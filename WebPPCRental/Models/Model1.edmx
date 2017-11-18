@@ -549,7 +549,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DemoPPCRentalEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DemoPPCRentalEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="DISTRICTs" EntityType="Self.DISTRICT" />
           <EntitySet Name="FEATUREs" EntityType="Self.FEATURE" />
           <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" />
@@ -609,7 +609,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DemoPPCRentalModelStoreContainer" CdmEntityContainer="DemoPPCRentalEntities1">
+        <EntityContainerMapping StorageEntityContainer="DemoPPCRentalModelStoreContainer" CdmEntityContainer="DemoPPCRentalEntities">
           <EntitySetMapping Name="DISTRICTs">
             <EntityTypeMapping TypeName="DemoPPCRentalModel.DISTRICT">
               <MappingFragment StoreEntitySet="DISTRICT">
