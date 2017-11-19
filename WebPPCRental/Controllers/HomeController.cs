@@ -9,7 +9,7 @@ namespace WebPPC.Controllers
 {
     public class HomeController : Controller
     {
-        DemoPPCRentalEntities db = new DemoPPCRentalEntities();
+        DemoPPCRentalEntities1 db = new DemoPPCRentalEntities1();
         public ActionResult Index()
         {
             List<PROPERTY> mi = new List<PROPERTY>();

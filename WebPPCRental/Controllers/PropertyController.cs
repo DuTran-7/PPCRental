@@ -9,7 +9,7 @@ namespace WebPPCRental.Controllers
 {
     public class PropertyController : Controller
     {
-        DemoPPCRentalEntities model = new DemoPPCRentalEntities();
+        DemoPPCRentalEntities1 model = new DemoPPCRentalEntities1();
         //
         // GET: /Property/
         public ActionResult Detail(int id)

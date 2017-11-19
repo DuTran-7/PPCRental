@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DemoPPCRentalModelStoreContainer" CdmEntityContainer="DemoPPCRentalEntities">
+  <EntityContainerMapping StorageEntityContainer="DemoPPCRentalModelStoreContainer" CdmEntityContainer="DemoPPCRentalEntities1">
     <EntitySetMapping Name="DISTRICTs">
       <EntityTypeMapping TypeName="DemoPPCRentalModel.DISTRICT">
         <MappingFragment StoreEntitySet="DISTRICT">

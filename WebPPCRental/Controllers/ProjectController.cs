@@ -9,7 +9,7 @@ namespace WebPPCRental.Controllers
 {
     public class ProjectController : Controller
     {
-        DemoPPCRentalEntities model = new DemoPPCRentalEntities();
+        DemoPPCRentalEntities1 model = new DemoPPCRentalEntities1();
         //
         // GET: /Project/
         public ActionResult ProjectI()

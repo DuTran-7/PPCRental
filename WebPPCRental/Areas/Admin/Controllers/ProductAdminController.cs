@@ -11,7 +11,7 @@ namespace WebPPCRental.Areas.Admin.Controllers
     {
         //
         // GET: /Admin/ProductAdmin/
-        DemoPPCRentalEntities model = new DemoPPCRentalEntities();
+        DemoPPCRentalEntities1 model = new DemoPPCRentalEntities1();
         //
         // GET: /ProductAdmin/
         public ActionResult Index()
