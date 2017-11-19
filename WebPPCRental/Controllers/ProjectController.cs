@@ -22,10 +22,10 @@ namespace WebPPCRental.Controllers
         {
 
             var pj = model.PROPERTies.ToList().Where(x => (x.PropertyName.Contains(name) && name != "")
-                || x.Content.Contains(name)
+                || (x.Content.Contains(name) && name != "")
                 || x.Price.Equals(int.Parse(price == "" ? "0" : price))
-                || x.BedRoom.Equals(bedroom)
-               || x.BathRoom.Equals(bathroom));
+                || x.BedRoom.Equals(int.Parse(bedroom == "" ? "0" : bedroom))
+               || x.BathRoom.Equals(int.Parse(bathroom == "" ? "0" : bathroom)));
 
             return View(pj);
         }
