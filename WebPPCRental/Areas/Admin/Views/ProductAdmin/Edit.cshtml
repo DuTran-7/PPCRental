@@ -1,5 +1,4 @@
 ﻿@model WebPPCRental.Models.PROPERTY
-
 @{
     ViewBag.Title = "Edit";
     Layout = "~/Areas/Admin/Views/Shared/Admin_Layout.cshtml";
@@ -7,10 +6,11 @@
 
 <h2>Edit</h2>
 
+
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>PROPERTY</h4>
         <hr />
@@ -44,7 +44,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.PropertyType_ID, "PropertyType_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("PropertyType_ID", String.Empty)
+                @Html.DropDownList("PropertyType_ID", new SelectList(ViewBag.PROPERTY_TYPE, "ID", "CodeType", Model.PropertyType_ID))
                 @Html.ValidationMessageFor(model => model.PropertyType_ID)
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Street_ID, "Street_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Street_ID", String.Empty)
+                @Html.DropDownList("Street_ID", new SelectList(ViewBag.STREET, "ID", "StreetName", Model.Street_ID))
                 @Html.ValidationMessageFor(model => model.Street_ID)
             </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Ward_ID, "Ward_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Ward_ID", String.Empty)
+                @Html.DropDownList("Ward_ID", new SelectList(ViewBag.WARD, "ID", "WardName", Model.Ward_ID))
                 @Html.ValidationMessageFor(model => model.Ward_ID)
             </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.District_ID, "District_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("District_ID", String.Empty)
+                @Html.DropDownList("District_ID", new SelectList(ViewBag.DISTRICT, "ID", "DistrictName", Model.District_ID))
                 @Html.ValidationMessageFor(model => model.District_ID)
             </div>
         </div>
@@ -132,7 +132,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.UserID, "UserID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("UserID", String.Empty)
+                @Html.DropDownList("Sale_ID", new SelectList(ViewBag.userr, "ID", "Fullname", Model.Sale_ID))
                 @Html.ValidationMessageFor(model => model.UserID)
             </div>
         </div>
@@ -156,7 +156,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Status_ID, "Status_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Status_ID", String.Empty)
+                @Html.DropDownList("Status_ID", new SelectList(ViewBag.userr, "ID", "Status", Model.Status_ID))
                 @Html.ValidationMessageFor(model => model.Status_ID)
             </div>
         </div>
@@ -180,8 +180,9 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Sale_ID, "Sale_ID", new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Sale_ID", String.Empty)
+                @Html.DropDownList("Sale_ID", new SelectList(ViewBag.userr, "ID", "Fullname", Model.Sale_ID))
                 @Html.ValidationMessageFor(model => model.Sale_ID)
+
             </div>
         </div>
 

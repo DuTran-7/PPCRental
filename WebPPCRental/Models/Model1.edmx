@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DemoPPCRentalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Team12Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="DISTRICT">
           <Key>
             <PropertyRef Name="ID" />
@@ -81,6 +81,16 @@
           <Property Name="StreetName" Type="nvarchar" MaxLength="50" />
           <Property Name="District_ID" Type="int" />
           <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -236,7 +246,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DemoPPCRentalModelStoreContainer">
+        <EntityContainer Name="Team12ModelStoreContainer">
           <EntitySet Name="DISTRICT" EntityType="Self.DISTRICT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FEATURE" EntityType="Self.FEATURE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" Schema="dbo" store:Type="Tables" />
@@ -244,6 +254,7 @@
           <EntitySet Name="PROPERTY_FEATURE" EntityType="Self.PROPERTY_FEATURE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PROPERTY_TYPE" EntityType="Self.PROPERTY_TYPE" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="STREET" EntityType="Self.STREET" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="WARD" EntityType="Self.WARD" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_PROPERTY_DISTRICT" Association="Self.FK_PROPERTY_DISTRICT">
@@ -295,7 +306,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DemoPPCRentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Team12Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="DISTRICT">
           <Key>
             <PropertyRef Name="ID" />
@@ -390,6 +401,16 @@
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="DISTRICT" Relationship="Self.FK_STREET_DISTRICT" FromRole="STREET" ToRole="DISTRICT" />
           <NavigationProperty Name="PROPERTies" Relationship="Self.FK_PROPERTY_STREET1" FromRole="STREET" ToRole="PROPERTY" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="USER">
           <Key>
@@ -549,7 +570,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DemoPPCRentalEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Team12Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="DISTRICTs" EntityType="Self.DISTRICT" />
           <EntitySet Name="FEATUREs" EntityType="Self.FEATURE" />
           <EntitySet Name="PROJECT_STATUS" EntityType="Self.PROJECT_STATUS" />
@@ -557,6 +578,7 @@
           <EntitySet Name="PROPERTY_FEATURE" EntityType="Self.PROPERTY_FEATURE" />
           <EntitySet Name="PROPERTY_TYPE" EntityType="Self.PROPERTY_TYPE" />
           <EntitySet Name="STREETs" EntityType="Self.STREET" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="USERs" EntityType="Self.USER" />
           <EntitySet Name="WARDs" EntityType="Self.WARD" />
           <AssociationSet Name="FK_PROPERTY_DISTRICT" Association="Self.FK_PROPERTY_DISTRICT">
@@ -609,9 +631,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DemoPPCRentalModelStoreContainer" CdmEntityContainer="DemoPPCRentalEntities1">
+        <EntityContainerMapping StorageEntityContainer="Team12ModelStoreContainer" CdmEntityContainer="Team12Entities1">
           <EntitySetMapping Name="DISTRICTs">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.DISTRICT">
+            <EntityTypeMapping TypeName="Team12Model.DISTRICT">
               <MappingFragment StoreEntitySet="DISTRICT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
@@ -620,7 +642,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FEATUREs">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.FEATURE">
+            <EntityTypeMapping TypeName="Team12Model.FEATURE">
               <MappingFragment StoreEntitySet="FEATURE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
@@ -629,7 +651,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROJECT_STATUS">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.PROJECT_STATUS">
+            <EntityTypeMapping TypeName="Team12Model.PROJECT_STATUS">
               <MappingFragment StoreEntitySet="PROJECT_STATUS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
@@ -638,7 +660,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTies">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.PROPERTY">
+            <EntityTypeMapping TypeName="Team12Model.PROPERTY">
               <MappingFragment StoreEntitySet="PROPERTY">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
@@ -666,7 +688,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTY_FEATURE">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.PROPERTY_FEATURE">
+            <EntityTypeMapping TypeName="Team12Model.PROPERTY_FEATURE">
               <MappingFragment StoreEntitySet="PROPERTY_FEATURE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Property_ID" ColumnName="Property_ID" />
@@ -675,7 +697,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROPERTY_TYPE">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.PROPERTY_TYPE">
+            <EntityTypeMapping TypeName="Team12Model.PROPERTY_TYPE">
               <MappingFragment StoreEntitySet="PROPERTY_TYPE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CodeType" ColumnName="CodeType" />
@@ -685,7 +707,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="STREETs">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.STREET">
+            <EntityTypeMapping TypeName="Team12Model.STREET">
               <MappingFragment StoreEntitySet="STREET">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="StreetName" ColumnName="StreetName" />
@@ -694,8 +716,19 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Team12Model.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="USERs">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.USER">
+            <EntityTypeMapping TypeName="Team12Model.USER">
               <MappingFragment StoreEntitySet="USER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
@@ -709,7 +742,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WARDs">
-            <EntityTypeMapping TypeName="DemoPPCRentalModel.WARD">
+            <EntityTypeMapping TypeName="Team12Model.WARD">
               <MappingFragment StoreEntitySet="WARD">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="WardName" ColumnName="WardName" />
