@@ -220,3 +220,5 @@ C:\Users\Admin\Desktop\Project\PPCRental\WebPPCRental\bin\System.Web.Razor.xml
 C:\Users\Admin\Desktop\Project\PPCRental\WebPPCRental\bin\System.Web.WebPages.xml
 C:\Users\Admin\Desktop\Project\PPCRental\WebPPCRental\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Admin\Desktop\Project\PPCRental\WebPPCRental\bin\System.Web.WebPages.Razor.xml
+D:\PPPPC\PPCRental\WebPPCRental\obj\Debug\WebPPCRental.csprojResolveAssemblyReference.cache
+D:\PPPPC\PPCRental\WebPPCRental\obj\Debug\WebPPCRental.pdb
